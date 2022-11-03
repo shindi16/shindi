@@ -4,9 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Bmi Calculator | fastpages</title>
+<title>Calorie Caluclator | fastpages</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Bmi Calculator" />
+<meta property="og:title" content="Calorie Caluclator" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
 <meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
@@ -15,9 +15,9 @@
 <meta property="og:site_name" content="fastpages" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Bmi Calculator" />
+<meta property="twitter:title" content="Calorie Caluclator" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"Bmi Calculator","url":"https://shindi16.github.io/shindi/bmi/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"Calorie Caluclator","url":"https://shindi16.github.io/shindi/bmi/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/shindi/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://shindi16.github.io/shindi/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/shindi/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -64,7 +64,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/shindi/about/">About Me</a><a class="page-link" href="/shindi/bmi/">Bmi Calculator</a><a class="page-link" href="/shindi/search/">Search</a><a class="page-link" href="/shindi/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/shindi/about/">About Me</a><a class="page-link" href="/shindi/bmi/">Bmi Calculator</a><a class="page-link" href="/shindi/bmi/">Calorie Caluclator</a><a class="page-link" href="/shindi/search/">Search</a><a class="page-link" href="/shindi/categories/">Tags</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -72,34 +72,46 @@ window.onload = wrap_img;
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Bmi Calculator</h1>
+    <h1 class="post-title">Calorie Caluclator</h1>
   </header>
 
   <div class="post-content">
-    <p>&lt;/head&gt;
-       &lt;body style="background-color: rgb(166, 194, 203);"&gt;
-           &lt;div class="calculator-container"&gt;
-               &lt;p&gt; <img src="../static/assets/bmi-graph.png" alt="BMI Graph" style="float:right;width:640px;height:520px;" />&lt;/p&gt;
-               &lt;div class="px-5 py-5 mx-auto"&gt;
-                   &lt;h1 class="text-primary"&gt;<strong>BMI Calculator :</strong> <strong><span style="font-style:italic;"> Calculadora de BMI</span></strong>&lt;/h1&gt;
-               &lt;p&gt;Height : <span style="font-style:italic;">Altura</span> (INCHES): <input class="height-input-field" type="text" />
-               &lt;p&gt;Weight: <span style="font-style:italic;">Peso</span> (POUNDS): <input class="weight-input-field" type="text" /><button class="calculate"> Calculate : <span style="font-style:italic;">Calcular</span></button></p>
+        <body style="background-color: rgb(217, 217, 217);"></body>
+    
+    <div class="px-5 py-5 mx-auto">
+        <h1 class="text-primary"><strong>Calorie Counter</strong></h1>
+        <br>
+    <html>
+    <body>
+        <label for="goal">Calorie Goal : <br></label><input type="text" id="goal"> <button type="submit" onclick="myfunc()" id="test">Submit</button>
 
-<style>
-    div.result {
-        position: relative;
-        left: 50px;
-        border: 3px solid #1F456E;
-    }
-    </style>
+        <script type="text/javascript">
+            const total_cal = 0
+            function myfunc() {
+                var goal = document.getElementById('goal').value;
+                document.write("Progress on Calorie Goal: ".fontsize(20) + " 0 ".fontsize(20) + " / ".fontsize(20) + goal.fontsize(20) + "<br>");
+                let btn = document.createElement("button");
+                btn.innerHTML = "Add";
+                var cal = 0
+                btn.addEventListener("click", function () {
+                    const inc = parseInt(prompt("How Many Calories Do you want to add? "));
+                    
+                    const sum = total_cal + inc; 
+                    var sum_text = sum.toString();
 
-<h3 class="result"></h3>
-<h4 class="result-statement"></h4>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    &lt;script type="text/javascript" src="_notebooks/app.js"&gt;&lt;/script&gt;
-&lt;/div&gt;
-</code></pre></div></div>
-<p>&lt;/body&gt;
-&lt;/html&gt;</p>
+                document.write("Progress on Calorie Goal: ".fontsize(20) + sum_text.fontsize(20) + " / ".fontsize(20) + goal.fontsize(20) + "<br>");
+                    
+                });
+                document.body.appendChild(btn);
+                    
+
+            }
+        </script>
+    <body>
+    </html>
+    
+        
+
 
 
   </div>
