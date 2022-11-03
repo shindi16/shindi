@@ -14,18 +14,18 @@ search_exclude: true
                <p>Height : <span style="font-style:italic;">Altura</span> (INCHES): <input class="height-input-field" type="text">
                <p>Weight: <span style="font-style:italic;">Peso</span> (POUNDS): <input class="weight-input-field" type="text"><button class="calculate"> Calculate : <span style="font-style:italic;">Calcular</span></button>
               
-               </head>
-               <style>
-                   div.result {
-                       position: relative;
-                       left: 50px;
-                       border: 3px solid #1F456E;
-                   }
-                   </style>
-               <h3 class="result"></h3>
-               <h4 class="result-statement"></h4>
-                       <script type="text/javascript" src="../static/js/app.js"></script>
-                   </div>
-       </body>
-       </html>
+
+<style>
+    div.result {
+        position: relative;
+        left: 50px;
+        border: 3px solid #1F456E;
+    }
+    </style>
+<h3 class="result"></h3>
+<h4 class="result-statement"></h4>
+        <script type="text/javascript" src="_notebooks/app.js"></script>
+    </div>
+</body>
+</html>
 
