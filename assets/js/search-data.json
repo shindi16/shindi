@@ -38,7 +38,9 @@
   
 
   
-      ,"page2": {
+
+  
+      ,"page3": {
           "title": "BMI Calculator",
           "content": "",
           "url": "https://shindi16.github.io/shindi/bmi/",
@@ -70,7 +72,7 @@
   
 
   
-      ,"page11": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://shindi16.github.io/shindi/robots.txt",
