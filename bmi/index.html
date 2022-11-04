@@ -4,9 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Calorie Caluclator | fastpages</title>
+<title>FitnessGoals | fastpages</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Calorie Caluclator" />
+<meta property="og:title" content="FitnessGoals" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
 <meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
@@ -15,9 +15,9 @@
 <meta property="og:site_name" content="fastpages" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Calorie Caluclator" />
+<meta property="twitter:title" content="FitnessGoals" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"Calorie Caluclator","url":"https://shindi16.github.io/shindi/bmi/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"FitnessGoals","url":"https://shindi16.github.io/shindi/bmi/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/shindi/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://shindi16.github.io/shindi/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/shindi/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -64,7 +64,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/shindi/404.html">About</a><a class="page-link" href="/shindi/bmi/">Bmi Calculator</a><a class="page-link" href="/shindi/bmi/">Calorie Caluclator</a><a class="page-link" href="/shindi/search/">Search</a><a class="page-link" href="/shindi/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/shindi/404.html">About</a><a class="page-link" href="/shindi/bmi/">Bmi Calculator</a><a class="page-link" href="/shindi/bmi/">Calorie Caluclator</a><a class="page-link" href="/shindi/bmi/">FitnessGoals</a><a class="page-link" href="/shindi/search/">Search</a><a class="page-link" href="/shindi/categories/">Tags</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -72,43 +72,60 @@ window.onload = wrap_img;
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Calorie Caluclator</h1>
+    <h1 class="post-title">FitnessGoals</h1>
   </header>
 
   <div class="post-content">
-        <body style="background-color: rgb(217, 217, 217);"></body>
-    
+        <!- Try building a new body here, bootstrap is a wise choice ->
+    <body style="background-color: rgb(217, 217, 217);"> 
     <div class="px-5 py-5 mx-auto">
-        <h1 class="text-primary"><strong>Calorie Counter</strong></h1>
-        <br>
-    <html>
-    <body>
-        <label for="goal">Calorie Goal : <br></label><input type="text" id="goal"> <button type="submit" onclick="myfunc()" id="test">Submit</button>
+        <h1 class="text-primary"><strong>Fitness Goals</strong></h1>
+        <p> <img src="../static/assets/fitnessgoals.webp" alt="fitnessgoals" style="float:right;width:700px;height:500px;"></p>
+        <html>
+        <body>
 
-        <script type="text/javascript">
-            const total_cal = 0
+            <label for="Name">What is your Name?</label> </label> <input type="text" id="name">
+            <br>
+            <br>
+            <h for="weight">What is your current weight(lb)? </h><input type="text" id="weight">
+            <br> 
+            <br>
+            <label for="height">What is your current Height(in)? </label> <input type="text" id="height"> 
+            <br>
+            <br>
+            <label for="change">Do you want to gain or lose weight? </label> <input type="text" id="change"> 
+        <button type="submit" onclick="myfunc()" id="check">Submit</button>
+            
+            <script type="text/javascript">
+                
             function myfunc() {
-                var goal = document.getElementById('goal').value;
-                document.write("Progress on Calorie Goal: ".fontsize(20) + " 0 ".fontsize(20) + " / ".fontsize(20) + goal.fontsize(20) + "<br>");
-                let btn = document.createElement("button");
-                btn.innerHTML = "Add";
-                var cal = 0
-                btn.addEventListener("click", function () {
-                    var inc = parseInt(prompt("How Many Calories do you want to add? "));
-                var cal = cal + inc
-                document.write("Progress on Calorie Goal: ".fontsize(20) + cal.fontsize(20) + " / ".fontsize(20) + goal.fontsize(20) + "<br>");
-                    
-                });
-                document.body.appendChild(btn);
-                    
+        
+                var change = document.getElementById('change').value;
+                
+                if (change == "gain") {
+                    document.write("Tips for Gaining Weight: ".fontsize(50) + "<br>")
+                    document.write("-".fontsize(6) + "Eat Healthy foods in bigger portions (remember it is important to gain with clean calories as junk food can cause you many diseases.".fontsize(6) + "<br>")
+                    document.write("-".fontsize(6) + "Choose nutrient-rich foods and make sure to contain the correct amount of protien,fats,dairy into your diet".fontsize(6) + "<br>")
+                    document.write("-".fontsize(6) + "Try smoothies and shakes with higher protien as it helps with the growth of muscules mass which will increase your weight".fontsize(6) + "<br>")
+                    document.write("-".fontsize(6) + "Go on a calorie surplus eating more calories than you burn".fontsize(6) + "<br>")
+                    document.write("-".fontsize(6) + "Exercise Certain Muscle Groups".fontsize(6) + "<br>")
+                    document.write("-".fontsize(6) + "Track Your Calories (Use our calorie counter!)".fontsize(6) + "<br>")
+                } else if (change == "lose") {
+                    document.write("Tips for Losing Weight: ".fontsize(50) + "<br>")
+                    document.write("-".fontsize(6) + "If you eat healthy and clean, it will keep one healthy and strong.".fontsize(6) + "<br>")
+                    document.write("-".fontsize(6) + "Exersice for at least 1 hr per day, areboic and cardiovascular exersices are proven best for weight loss".fontsize(6) + "<br>")
+                    document.write("-".fontsize(6) + "Make sure to drink at least 8 cups of water per day which will nelp you stay hydrated but also flush off that extra weight".fontsize(6) + "<br>")
+                    document.write("-".fontsize(6) + "Eat high fibre foods as they are known to benfit you for a more sustanible weight loss journey".fontsize(6) + "<br>")
+                    document.write("-".fontsize(6) + "Keep away from junk food,eating it once in a blue moon wont hurt but staying consistent on it will have a major setback on your goals, we reccomend to clean out your pantries and use all that extra junk food and donate it to people in need as you need to focus on your progress".fontsize(6) + "<br>")
+                    document.write("-".fontsize(6) + "Track and Plan your meals, this will promote a way for you to know what you are eating and how much you are eating as portion size and specific food determine how much weight you can loose over periods of time.".fontsize(6) + "<br>")
 
+                } else {
+                    document.write("There has been an Error, Please re-enter your answers")
+                }
             }
         </script>
-    <body>
-    </html>
-    
-        
-
+        </body>
+        </html>
 
 
   </div>
